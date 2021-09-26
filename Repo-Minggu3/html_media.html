@@ -1,0 +1,65 @@
+<!DOCTYPE Html>
+<html>
+
+    <head>
+        <title>HTML MEDIA</title>
+    </head>
+    <body>
+        <h1 align="center">Belajar Html Media </h1>
+
+        <h3>Html Video</h3>
+        <h4 >Putar secara manual</h4>
+        <video width="300" controls>
+            <source src="/media/spidi.mp4" type="video/mp4">
+        </video>
+        <h4>Putar Secara Otomatis   </h4>
+        <video width="300" autoplay controls muted>
+            <source src="/media/spidi.mp4" type="video/mp4">
+        </video>
+        <h4>Putar Secara Otomatis Namun Termuted  </h4>
+        <video width="300" autoplay muted controls>
+            <source src="/media/spidi.mp4" type="video/mp4">
+        </video>
+
+        <h3>Html Audio</h3>
+        <h4>Putar Secara Manual</h4>
+        <audio controls>
+            <source src="/media/Clarity.mp3" type="audio/mp3">
+        </audio>
+        <h4>Putar Secara Otomatis</h4>
+        <audio controls autoplay muted>
+            <source src="/media/Clarity.mp3" type="audio/mp3">
+        </audio>
+        <h4>Putar Secara Otomatis Namun Termuted</h4>
+        <audio controls autoplay muted>
+            <source src="/media/Clarity.mp3" type="audio/mp3">
+        </audio>
+
+        <h3>Plug-in Html</h3>
+        <h4>Objek Html</h4>
+        <object width="100%" height="100px" data="yuhu.html"></object>
+        <h4>Objek Pdf</h4>
+        <object width="100%" height="500px" data="/media/Dinus Inside.pdf"></object>
+        <h4>Objek gambar</h4>
+        <object data="media/bmw.jpg"></object>
+        <h4>Embed gambar</h4>
+        <embed src="/media/bmw.jpg">
+        <h4>Embed Html</h4>
+        <embed width="100%" height="100px" src="yuhu.html">
+
+        <h3>Html Youtube</h3>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QjGcCFx8-sk">
+        </iframe>
+        <h4>Pemutaran Otomatis Namun Termuted</h4>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QjGcCFx8-sk?autoplay=1&mute=1">
+        </iframe>
+        <h4>Looping</h4>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QjGcCFx8-sk?playlist=QjGcCFx8-sk&loop=1">
+        </iframe>
+        <h4>Controls</h4>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QjGcCFx8-sk?controls=0">
+        </iframe>
+
+
+    </body>
+</html>
