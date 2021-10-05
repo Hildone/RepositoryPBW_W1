@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Formulir PPDB 2020</title>
+    <style>
+        h1{
+            text-shadow: 2px 4px 10px rgb(255, 255, 255);
+            color: white;
+        }
+        body{
+            background-color: gray;
+        }
+        
+        fieldset{
+            background-color: white;
+            border: 1px solid #DDDDDD;
+            font-size: 14px;
+            font-family: Arial, Helvetica;
+            padding: 1em 2em;
+        }
+
+        .box{
+        height: 0px;
+        width: 800px;
+        margin: 0 auto;
+        }
+        label {
+            color: black;
+            display: block;
+            font-size: 16px;
+        }
+        legend {
+            background: #BFD48C;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            padding: 0.5em 1em;
+            font-size: 16px;
+        }
+        input[type="text"] {
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding: 0.5em 1em 0.5em 0;
+            width: 700px;
+        }
+        
+        input[type="text"]:focus {
+            border-bottom: 1px solid black;     
+            outline: none;
+        }
+
+        input[type="number"] {
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding: 0.5em 1em 0.5em 0;
+            width: 250px;
+        }
+        input[type="number"]:focus {
+            border-bottom: 1px solid #BFD48C;     
+            outline: none;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset] {
+            width: 100%;
+            background-color: #272626;
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #2d5a2f;
+        }
+
+        input[type=reset]:hover {
+            background-color: #525151;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header"><h1 align="center">FORMULIR PPDB JALUR ZONASI 2020</h1></div>
+        <div class="box">
+        <form action="proses.php" method="post" name="contoh">
+            <fieldset>
+                <legend>Info Pendaftaran</legend>
+                <label for="nisn"> NISN : </label>
+                <input type="number" id="nisn" name="nisn" required=""><br><br>
+                <label for="askol">Asal Sekolah : </label>
+                <input type="text" id="askol" name="askol"><br><br>
+                <label for="talus">Tahun Lulus : </label>
+                <input type="number" id="talus" name="talus">
+            </fieldset> <br><br>
+            <fieldset>
+                <legend> Data Calon Peserta</legend>
+                <label for="nama">Nama Lengkap :</label>
+                <input type="text" id="nama" name="nama" required=""><br><br>
+                <label for="nik">NIK : </label>
+                <input type="number" id="nik" name="nik" required=""><br><br>
+                <label for="ttl">Tempat, Tanggal Lahir :</label>
+                <input type="text" id="ttl" name="ttl" required=""><br><br>
+                <label for="jk">Jenis Kelamin :</label>
+                <input type="radio" id="jk" name="jk"> Laki-Laki
+                <input type="radio" id="jk" name="jk"> Perempuan <br><br>
+                <label for="agamap">Agama :</label>
+                <input type="text" id="agamap" name="agamap">
+                <label for="alamat">Alamat : </label>
+                <input type="text" id="alamat" name="alamat">
+                <label for="desa">Desa/Kelurahan :</label>
+                <input type="text" id="desa" name="desa">
+                <label for="kec">Kecamatan : </label>
+                <input type="text" id="kec" name="kec">
+                <label for="kab">Kabupaten : </label>
+                <input type="text" id="kab" name="kab">
+                <label for="prov">Provinsi : </label>
+                <input type="text" id="prov" name="prov">
+                <label for="email">Email Aktif : </label>
+                <input type="text" id="emil" name="email">
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Data Orang Tua</legend>
+                <label for="nokk"> Nomor Kartu Keluarga : </label>
+                <input type="number" id="nokk" name="nokk" required="">
+                <label for="namaayah">Nama Ayah Kandung : </label>
+                <input type="text" id="namaayah" name="namaayah">
+                <label for="agamaayah">Agama : </label>
+                <input type="text" id="agamaayah" name="agamaayah">
+                <label for="kerjaayah">Perkerjaan :</label>
+                <input type="text" id="kerjaayah" name="kerjaayah">
+                <label for="namaibu">Nama Ibu Kandung: </label>
+                <input type="text" id="namaibu" name="namaibu">
+                <label for="agamaibu">Agama : </label>
+                <input type="text" id="agamaibu" name="agamaibu">
+                <label for="kerjaibu">Perkerjaan :</label>
+                <input type="text" id="kerjaibu" name="kerjaibu">
+                <label for="alamatortu">Alamat Orang Tua : </label>
+                <input type="text" id="alamatortu" name="alamatortu">
+                <label for="desaortu">Desa/Kelurahan :</label>
+                <input type="text" id="desaortu" name="desaortu">
+                <label for="kecortu">Kecamatan : </label>
+                <input type="text" id="kecortu" name="kecortu">
+                <label for="kabortu">Kabupaten : </label>
+                <input type="text" id="kabortu" name="kabortu">
+                <label for="provortu">Provinsi : </label>
+                <input type="text" id="provortu" name="provortu">
+            </fieldset><br><br>
+            <input name="submit" type="submit" value="Submit">
+            <input name="reset" type="reset" value="Reset">
+        </form>
+    </div>
+    </body>
+</html>
